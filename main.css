@@ -1,0 +1,106 @@
+body{
+    background-color: #CEEC97;
+}
+.card {
+    color: rgb(73, 110, 110);
+    border-radius: 20px;
+    background-color: #f9bcd8;
+    font-size: 18px;
+}
+.card__title {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 40px;
+    text-align: center;
+-webkit-text-stroke: 2px ;
+text-shadow: 
+0 0 7px #daff35, 
+0 0 10px #CEEC97, 
+0 0 20px #CEEC97,
+0 0 45px #dfffa3,
+0 0 60px #5b8905;
+}
+.card__excerpt {
+    margin: 1em 3em;
+}
+.card__image {
+    display: block;
+    margin: 2rem auto;
+    width: 68vh;
+    align-items: center;
+    text-align: center;
+    max-width:100%;
+    filter: invert(100%) saturate(200%);
+}
+.card__more {
+    display: block;
+    text-align: center;
+    padding: 2rem;
+    background-color: rgb(158, 123, 186);
+}
+.card__more:hover {
+    border-radius: 3em;
+}
+.card__more:active {
+    background-color: aqua;
+}
+
+@media screen and (min-width: 1024px) {
+  .card {
+    background-color:  #f9bcd8;
+  }
+  .card__title {
+    font-size: 3.2rem;
+    color: #CEEC97;
+  }
+  .card__excerpt {
+    font-size: 2rem;
+  }
+  .card__image {
+    display: block;
+    margin: 2rem auto;
+    width: 68vh;
+    align-items: center;
+    text-align: center;
+    max-width:100%;
+    filter: invert(100%) saturate(200%);
+  }
+  .card__more {
+    display: block;
+    text-align: center;
+    padding: 2rem;
+    background-color: rgb(158, 123, 186);
+  }
+  .card__more:hover {
+    border-radius: 1em;
+  }
+  .card__more:active {
+    background-color: aqua;
+  }
+}
+
+/* You can leave everything below as is — we'll explain flexbox in a later lecture! */
+.cards {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 8vw;
+}
+
+@keyframes tilt {
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(-5deg); }
+    50% { transform: rotate(5deg); }
+    75% { transform: rotate(-5deg); }
+    100% { transform: rotate(0deg); }
+}
+.tilt:hover {
+    display: block;
+    margin: 0 auto;
+    animation: tilt 0.3s ease-in-out infinite;
+}
+.highlight {
+    position: relative;
+    color: #e1ff69; 
+    cursor: pointer;
+    text-decoration: underline;
+}
