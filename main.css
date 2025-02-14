@@ -1,15 +1,15 @@
 body{
-    background-color: #CEEC97;
+    background-color: #00008B;
 }
 .card {
     color: rgb(73, 110, 110);
     border-radius: 20px;
-    background-color: #f9bcd8;
+    background-color: #FF0000;
     font-size: 18px;
 }
 .card__title {
     font-family: 'Courier New', Courier, monospace;
-    font-size: 40px;
+    font-size: 30px;
     text-align: center;
 -webkit-text-stroke: 2px ;
 text-shadow: 
@@ -49,7 +49,7 @@ text-shadow:
     background-color:  #f9bcd8;
   }
   .card__title {
-    font-size: 3.2rem;
+    font-size: 4rem;
     color: #CEEC97;
   }
   .card__excerpt {
@@ -67,7 +67,7 @@ text-shadow:
   .card__more {
     display: block;
     text-align: center;
-    padding: 2rem;
+    padding: 4rem;
     background-color: rgb(158, 123, 186);
   }
   .card__more:hover {
